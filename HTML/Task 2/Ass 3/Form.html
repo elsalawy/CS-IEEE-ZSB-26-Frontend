@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="Description" content ="ah7a"/>
+        <title>Form</title>
+        <style>  </style>
+        <script> </script>
+    </head>
+
+    <body>
+
+    <form action="test.py" method="POST">
+
+        <!-- Username -->
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="Enter your username (required)" required><br>
+        <hr>
+
+        <!-- Password -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Choose a strong password"><br>
+        <hr>
+
+        <!-- Mobile -->
+        <label for="mobile">Mobile:</label><br>
+        <input type="tel" id="mobile" name="mobile" placeholder="Format: +20100 (234) 123" pattern="\+\d{5} \(\d{3}\) \d{3}"><br>
+        <hr>
+
+        <!-- Email -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email (required)" required><br>
+        <hr>
+
+        <!-- Subject -->
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" placeholder="Write the subject or topic here"><br>
+        <hr>
+
+        <!-- Hidden Field -->
+        <input type="hidden" name="hiddenValue" value="12345">
+
+        <!-- Buttons -->
+        <input type="reset" value="Empty Form">
+        <input type="submit" value="Send Data">
+
+    </form>
+
+</body>
+</html>
