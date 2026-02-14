@@ -1,0 +1,17 @@
+HTML and Accessibility Answers :-
+
+1. Use <button type="submit"> or <input type="submit"> inside a form to submit data.
+
+2. Use <h1> for the main page title.
+
+3. Use <h2> for section titles (or h3, h4 depending on hierarchy).
+
+4. Use <p> for paragraphs of text.
+
+5. Set page language with the lang attribute in <html>, e.g., <html lang="en">.
+
+6. For accessibility, use "10 – 20" instead of "10 To 20".
+
+7. Make a <div> focusable with tabindex, e.g., <div tabindex="0">Accessible via Tab</div>.
+
+8. ARIA stands for Accessible Rich Internet Applications, adding accessibility features for users with disabilities.
