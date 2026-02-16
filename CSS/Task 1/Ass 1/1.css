@@ -1,0 +1,15 @@
+/* Any element with class "title"
+   This selects all elements that have class="title" */
+.title {}
+
+/* Element with ID "nav"
+   This selects the single element that has id="nav" */
+#nav {}
+
+/* All <div> elements
+   This selects every div element in the page */
+div {}
+
+/* All <h2> elements
+   This selects every h2 heading in the page */
+h2 {}
