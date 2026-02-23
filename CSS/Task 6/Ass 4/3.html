@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Position</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .parent {
+            width: 550px;
+            height: 350px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        .parent .basic,
+        .parent .pro {
+            background-color: #EEE;
+            width: 250px;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .basic::before {
+            content: "Basic";
+            width: 80%;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 5px;
+            background-color: rgb(0 187 255);
+            color: white;
+            text-align: center;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+        }
+
+        .basic::after {
+            content: "Free";
+            font-size: xx-large;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #DDD;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: absolute;
+            left: 10%;
+            top: 28%;
+
+        }
+
+        .pro::before {
+            content: "Pro";
+            width: 80%;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 5px;
+            background-color: rgb(0 187 255);
+            color: white;
+            text-align: center;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+        }
+
+        .pro::after {
+            content: "30$";
+            font-size: xx-large;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #DDD;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: absolute;
+            left: 10%;
+            top: 28%;
+        }
+
+
+        .line {
+            width: 1.8px;
+            height: 90%;
+            background-color: rgb(0 187 255);
+            position: absolute;
+            left: 50%;
+            top: 5%;
+        }
+
+        .cir {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: rgb(0 187 255);
+            color: white;
+            font-size: large;
+            text-align: center;
+            line-height: 30px;
+            position: absolute;
+            left: 260px;
+            top: 160
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+
+        <div class="basic"></div>
+        <span class="line"></span>
+        <span class="cir">Or</span>
+        <div class="pro"></div>
+
+    </div>
+
+</body>
+
+</html>

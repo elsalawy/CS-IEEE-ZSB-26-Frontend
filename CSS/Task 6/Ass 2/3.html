@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>List Style</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+
+        }
+
+
+        ul.main-list {
+            width: 400px;
+            list-style: none;
+            padding: 20px;
+        }
+
+
+        ul.main-list>li {
+            background-color: #f0f0f0;
+            padding: 15px;
+            margin-bottom: 30px;
+            color: #333;
+            font-weight: normal;
+        }
+
+        ol,
+        ul.main-list li ul {
+            margin-top: 10px;
+            padding-left: 40px;
+            list-style-position: outside;
+        }
+
+        ul.main-list {
+            list-style-position: inside;
+        }
+
+        ol li,
+        ul.main-list li ul li {
+            background-color: #fff;
+            padding: 10px;
+            margin-bottom: 8px;
+        }
+
+        ul.main-list li ul {
+            margin-top: 10px;
+            padding-left: 40px;
+            list-style-position: inside;
+            margin-left: -30px;
+        }
+
+        .js-list {
+            list-style-type: circle;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="main-list">
+        <li>
+            HTML
+            <ol start="10">
+                <li>Slim</li>
+                <li>Pugjs</li>
+                <li>HAML</li>
+            </ol>
+        </li>
+
+        <li>
+            CSS
+            <ol type="I" start="10">
+                <li>SASS</li>
+                <li>LESS</li>
+                <li>PostCSS</li>
+            </ol>
+        </li>
+
+        <li>
+            JavaScript
+            <ul class="js-list">
+                <li>Vuejs</li>
+                <li>Sveltejs</li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+
+</html>

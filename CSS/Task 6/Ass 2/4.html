@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>List Style</title>
+    <style>
+        body {
+            margin: 10px;
+            background-color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        table {
+            width: 700px;
+            text-align: center;
+            padding: 30px;
+            border-spacing: 3px;
+
+        }
+
+        th {
+            background-color: rgb(73, 72, 70);
+            color: white;
+            height: 50px;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+        }
+
+        tr {
+            background-color: #EEE;
+            margin: 10px;
+        }
+
+        .btn-view {
+            background-color: rgb(17, 138, 219);
+            color: white;
+            border: none;
+            height: 25px;
+            width: 50px;
+        }
+
+        .btn-delete {
+            background-color: rgb(230, 62, 62);
+            color: white;
+            border: none;
+            height: 25px;
+            width: 50px;
+        }
+
+        caption {
+            font-weight: 800;
+            font-style: italic;
+        }
+    </style>
+</head>
+<table>
+    <caption>Developers Rating</caption>
+    <br>
+    <thead>
+        <tr>
+            <th>Avatar</th>
+            <th>Group</th>
+            <th>Name</th>
+            <th>Points</th>
+            <th>Control</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td><img src="https://scontent.faly8-1.fna.fbcdn.net/v/t39.30808-1/495135322_4549317075352238_7067080212475840567_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=102&ccb=1-7&_nc_sid=e99d92&_nc_ohc=My-BCrUVq0gQ7kNvwFJt7pn&_nc_oc=Adk5cWfwnhCYvFhM25-gm47vut3heJTa1bxcxwNPmw3X3CzAAdZ4ADWSUG-EFYlvdZI&_nc_zt=24&_nc_ht=scontent.faly8-1.fna&_nc_gid=mDa3KIPAerVIxw-jgpSidQ&oh=00_AfsaBAXEE7uRqSwgV9dve_FMZn6vhc6SRrcJ5DJkFh5iSw&oe=69A0EC9A"
+                    alt=""></td>
+            <td>Ninja</td>
+            <td>Hussien Elsalawy</td>
+            <td>200</td>
+            <td>
+                <button class="btn-view">View</button>
+                <button class="btn-delete">Delete</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td><img src="https://scontent.faly8-1.fna.fbcdn.net/v/t39.30808-1/380417345_846711776989624_7267688238183457201_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e99d92&_nc_ohc=lqMMI9QdwmsQ7kNvwHaY4FT&_nc_oc=Adkb95Wf0jtat0PzJqQE5fgJYNgwcUn2p9jrpBAxB2YQn96ruG_2x7uHIMy8EQmHmdA&_nc_zt=24&_nc_ht=scontent.faly8-1.fna&_nc_gid=v3vtpTRLknAknl8J6ajz7g&oh=00_Afv2qOvDRakQ6ISLJ2YDKc_4NL1XbR_voWxgeQjVpwaWGQ&oe=69A0D419"
+                    alt=""></td>
+            <td rowspan="2">Shadow</td>
+            <td>Abdallah Afifi</td>
+            <td>100</td>
+            <td>
+                <button class="btn-view">View</button>
+                <button class="btn-delete">Delete</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td><img src="https://scontent.faly8-2.fna.fbcdn.net/v/t39.30808-1/429889047_252476077925802_4298119602695440959_n.jpg?stp=cp6_dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_ohc=1yUnAHVKuTMQ7kNvwEvAScg&_nc_oc=AdlhOaOGJzq_bYnNTA-ijnq3hNEdRsplMg_w3w0FbQWDaWu5tmvQ_E1CubOKZGc7SvY&_nc_zt=24&_nc_ht=scontent.faly8-2.fna&_nc_gid=YmQs-oA-5yzaOVks82ogHg&oh=00_AfvVrSfdkVVPqs8aYvjXDjv9zO7mpT41bAqtJ-MDEH16kQ&oe=69A0E880"
+                    alt=""></td>
+
+            <td>Hazem Elmorgel</td>
+            <td>150</td>
+            <td>
+                <button class="btn-view">View</button>
+                <button class="btn-delete">Delete</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td><img src="https://scontent.faly8-1.fna.fbcdn.net/v/t39.30808-1/488921587_1363092788332184_6105625687948333572_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=1d2534&_nc_ohc=J2lzJcLTyeQQ7kNvwFBuTM4&_nc_oc=Adk6j2d3fA2YW2zcSNV3iRI9L5ipRaQ97wtjAP4koyY3jS0jDtJ9SpUeBW7XAMuQIlY&_nc_zt=24&_nc_ht=scontent.faly8-1.fna&_nc_gid=yhdwPIkEnzn68SVgxFTSXA&oh=00_AfvvCHbkCjidVX9tDCZBu4UG3r7Js1ZAzU2ctZzF38y_Fw&oe=69A0D9E2"
+                    alt=""></td>
+            <td rowspan="2">Valhala</td>
+            <td>Ziad Ahmed</td>
+            <td>90</td>
+            <td>
+                <button class="btn-view">View</button>
+                <button class="btn-delete">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="https://scontent.faly8-1.fna.fbcdn.net/v/t39.30808-1/455706632_1052123346441580_693839161512062812_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=110&ccb=1-7&_nc_sid=1d2534&_nc_ohc=3UW8z6MfvcAQ7kNvwFuGhPz&_nc_oc=AdkcHCz0zZYFfyiW5tBCarKEbWi1ZFBExkvj5Vq6Au_7E1gXmX7xGVbFsKl-5T57Qd4&_nc_zt=24&_nc_ht=scontent.faly8-1.fna&_nc_gid=grUU54Sy8rl0uO_1pHqsIw&oh=00_AfsVClvQ8dCBShtvTeYQ_qhyWKQIFeve-x_ps2RbzIJS3w&oe=69A0DA4F"
+                    alt=""></td>
+            <td>Abdo Magdy</td>
+            <td>120</td>
+            <td>
+                <button class="btn-view">View</button>
+                <button class="btn-delete">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="https://scontent.faly8-2.fna.fbcdn.net/v/t39.30808-1/580615337_1470197668027480_7677960297460455726_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=pJa02J8CmegQ7kNvwG4Y4Nq&_nc_oc=AdmPjjX0AOj_6Riqdi1qGf3Yc9hJHB01IBfdqUtWTNWC4e2buA75pGJ2hHdCargiLBU&_nc_zt=24&_nc_ht=scontent.faly8-2.fna&_nc_gid=QtetjwWb66XrPf1iQND5Xg&oh=00_AfuM-qvIJMBEHaD_5xOG2i4pRkHei8JDCaoKLJa20SvTpw&oe=69A0C906"
+                    alt=""></td>
+            <td>Turtuls</td>
+            <td>Abdallah Fathi</td>
+            <td>175</td>
+            <td>
+                <button class="btn-view">View</button>
+                <button class="btn-delete">Delete</button>
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+
+
+
+</body>
+
+</html>
