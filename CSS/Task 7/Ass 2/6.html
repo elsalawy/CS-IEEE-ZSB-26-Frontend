@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Position</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .page {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            height: 90%;
+            padding: 10px;
+            background-color: #EEE;
+            gap: 10px;
+        }
+
+        .page div {
+            background-color: #cecdcd;
+            padding: 10px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: transparent !important;
+            padding: 0 !important;
+            gap: 15px;
+        }
+
+        .logo {
+            flex: 1;
+            text-align: center;
+        }
+
+        .links {
+            display: flex;
+            list-style: none;
+            gap: 15px;
+            flex: 9;
+            margin: 0;
+            justify-content: flex-end;
+        }
+
+        .main-area {
+            display: flex;
+            flex: 1;
+            gap: 15px;
+            background-color: transparent !important;
+            padding: 0 !important;
+        }
+
+        .content {
+            flex: 3;
+        }
+
+        .sidebar {
+            flex: 1;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+        <div class="header">
+            <div class="logo">Logo</div>
+            <div class="links">
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </div>
+        </div>
+        <div class="main-area">
+            <div class="content">Content</div>
+            <div class="sidebar">Sidebar</div>
+        </div>
+        <div class="footer">
+            <div class="copyright">&copy; Copyright 2026</div>
+            <div class="design">Designed By Elsalawy</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

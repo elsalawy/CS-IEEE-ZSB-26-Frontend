@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Position</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .parent {
+            background-color: #EEE;
+            width: 600px;
+            height: 300px;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .parent div {
+            background-color: rgb(56, 140, 209);
+            width: calc((100% - 20px) / 3);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .six {
+            order: 1;
+            height: 50%;
+        }
+
+        .three {
+            order: 2;
+            height: 10%;
+        }
+
+        .four {
+            order: 3;
+            height: 50%;
+        }
+
+        .five {
+            order: 4;
+            height: 50%;
+        }
+
+        .two {
+            order: 5;
+            height: 50%;
+        }
+
+        .one {
+            order: 6;
+            height: 10%;
+            align-self: self-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="six">6</div>
+    </div>
+
+
+
+</body>
+
+</html>
