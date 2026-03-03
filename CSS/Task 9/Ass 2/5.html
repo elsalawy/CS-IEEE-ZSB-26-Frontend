@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Transition</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 1000px;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: 1s ease;
+        }
+
+        div::before,
+        div::after {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            backface-visibility: hidden;
+            font-size: xx-large;
+        }
+
+        div::before {
+            content: "Front";
+            background-color: rgba(255, 0, 98, 0.856);
+        }
+
+        div::after {
+            content: "Back";
+            background-color: rgba(0, 89, 255, 0.856);
+            transform: rotateY(180deg);
+        }
+
+        div:hover {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

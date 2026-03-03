@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skew</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+
+            position: relative;
+            background-color: #149a8a;
+            color: white;
+            padding: 20px 60px;
+            font-size: xx-large;
+            font-weight: bold;
+            letter-spacing: 2px;
+            position: relative;
+        }
+
+        div::before {
+            content: "";
+            width: 10px;
+            height: 100%;
+            background-color: white;
+            position: absolute;
+            top: 0px;
+            left: 5px;
+            transform: skewX(20deg);
+        }
+
+        div::after {
+            content: "";
+            width: 20px;
+            height: 100%;
+            background-color: #149a8a;
+            position: absolute;
+            top: 0px;
+            left: -15px;
+            transform: skewX(20deg);
+        }
+
+        /* div::before transform: matrix(1, 0, 0.3640, 1, 0, 0);
+        div::after transform: matrix(1, 0, 0.3640, 1, 0, 0); */
+    </style>
+</head>
+
+<body>
+    <div>
+        Elsalawy
+    </div>
+
+</body>
+
+</html>
