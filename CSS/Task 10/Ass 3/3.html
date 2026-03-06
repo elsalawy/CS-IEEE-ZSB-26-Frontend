@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Media</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        .parent {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .parent>div {
+            padding: 20px;
+            background: #eee;
+            font-size: 15px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .colored {
+            font-size: 20px;
+        }
+
+        /* Tablet */
+
+        @media (min-width:768px) {
+
+            .parent {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px 20px;
+                grid-template-areas:
+                    "one one one"
+                    "two three four";
+            }
+
+            .colored {
+                color: red;
+            }
+
+        }
+
+        /* Desktop */
+
+        @media (min-width:992px) {
+
+            .parent {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px 20px;
+                grid-template-areas:
+                    "one one"
+                    "two three"
+                    "four four";
+            }
+
+            .colored {
+                color: rgb(36, 94, 172);
+            }
+
+        }
+
+        .one {
+            grid-area: one;
+        }
+
+        .two {
+            grid-area: two;
+        }
+
+        .three {
+            grid-area: three;
+        }
+
+        .four {
+            grid-area: four;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+
+        <div class="one">
+            <div class="colored">Product One</div>
+            <div>This is product</div>
+        </div>
+
+        <div class="two">
+            <div class="colored">Product Two</div>
+            <div>This is product</div>
+        </div>
+
+        <div class="three">
+            <div class="colored">Product Three</div>
+            <div>This is product</div>
+        </div>
+
+        <div class="four">
+            <div class="colored">Product Four</div>
+            <div>This is product</div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
