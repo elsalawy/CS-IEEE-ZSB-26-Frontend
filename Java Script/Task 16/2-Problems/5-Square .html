@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Digits</title>
+    <script>
+        function Square(num) {
+            let arr = num.toString().split('');
+            for (let i = 0; i < arr.length; i++) {
+                arr[i] = arr[i] * arr[i];
+            }
+            return arr.join('');
+        }
+
+        console.log(Square(9119));
+        console.log(Square(2483));
+        console.log(Square(3212));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

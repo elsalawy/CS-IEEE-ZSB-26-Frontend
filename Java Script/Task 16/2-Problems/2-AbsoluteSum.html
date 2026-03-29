@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum</title>
+
+    <script>
+        function AbsoluteSum(...arr) {
+            let sum = 0;
+
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] < 0) {
+                    sum += -arr[i];
+                } else {
+                    sum += arr[i];
+                }
+            }
+            return sum;
+        }
+
+        let items = prompt("Enter numbers : ");
+        let array = items.split(" ").map(Number);
+        console.log("Absolute Sum = " + AbsoluteSum(...array));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
