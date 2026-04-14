@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+    <script>
+
+        let myFavGames = {
+            "Trinity Universe": {
+                publisher: "NIS America",
+                price: 40,
+            },
+            "Titan Quest": {
+                publisher: "THQ",
+                bestThree: {
+                    one: "Immortal Throne",
+                    two: "Ragnarök",
+                    three: "Atlantis",
+                },
+                price: 50,
+            },
+            YS: {
+                publisher: "Falcom",
+                bestThree: {
+                    one: "Oath in Felghana",
+                    two: "Ark Of Napishtim",
+                    three: "origin",
+                },
+                price: 40,
+            },
+        };
+
+        // Get Object Keys
+        let games = Object.keys(myFavGames);
+
+        // Code One => How To Get Object Length ?
+        let objectLength = games.length;
+
+        for (let i = 0; i < objectLength; i++) {
+            console.log(`The Game Name Is ${games[i]}`);
+            console.log(`The Publisher Is ${myFavGames[games[i]].publisher}`);
+            console.log(`The Price Is ${myFavGames[games[i]].price}`);
+
+            // Check If Nested Object Has Property (bestThree)
+            if (myFavGames[games[i]].bestThree) {
+                console.log("- Game Has Releases");
+                console.log(`First => ${myFavGames[games[i]].bestThree.one}`);
+                console.log(`Second => ${myFavGames[games[i]].bestThree.two}`);
+                console.log(`Third => ${myFavGames[games[i]].bestThree.three}`);
+            }
+            console.log("#".repeat(20));
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
