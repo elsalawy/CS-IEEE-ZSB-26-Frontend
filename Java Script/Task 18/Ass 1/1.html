@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+</head>
+
+<body>
+    <div id="elzero" class="element" name="js">JavaScript</div>
+
+    <script>
+        let myElement;
+
+
+        myElement = document.getElementById("elzero");
+        myElement = document.getElementsByClassName("element")[0];
+        myElement = document.getElementsByTagName("div")[0];
+        myElement = document.querySelector(".element");
+        myElement = document.querySelector("#elzero");
+        myElement = document.body.firstChild;
+        myElement = document.body.lastChild;
+        myElement = document.children[0].children[1].children[0];
+        myElement = document.childNodes[1].childNodes[1].childNodes[0];
+        myElement = document.body.firstElementChild;
+        myElement = document.body.lastElementChild;
+        myElement = document.querySelectorAll("div")[0];
+        myElement = document.querySelector("[name='js']");
+        myElement = document.body.children[0];
+
+        console.log(myElement);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+</head>
+
+<body>
+    <div class="one" title="two">Two</div>
+    <div class="two" title="one">One</div>
+</body>
+<script>
+    let divs = document.querySelectorAll("div");
+
+    let firstText = divs[0].textContent;
+    let secondText = divs[1].textContent;
+
+    let firstTitle = divs[0].title;
+    let secondTitle = divs[1].title;
+
+    divs[0].textContent = secondText;
+    divs[1].textContent = firstText;
+
+    divs[0].title = secondTitle;
+    divs[1].title = firstTitle;
+
+    divs[1].textContent += " " + divs.length;
+</script>
+
+</html>

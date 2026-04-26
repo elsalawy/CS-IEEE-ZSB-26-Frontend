@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+</head>
+
+<body>
+    <img decoding="async" src="#" alt="One" />
+    <img decoding="async" src="#" />
+    <img decoding="async" src="#" alt="Three" />
+    <img decoding="async" src="#" />
+    <img decoding="async" src="#" />
+</body>
+<script>
+    let img = document.images;
+
+    for (let i = 0; i < img.length; i++) {
+        if (img[i].hasAttribute("alt")) {
+            img[i].alt = "Old";
+        } else {
+            img[i].alt = "Elzero New";
+        }
+    }
+</script>
+
+</html>

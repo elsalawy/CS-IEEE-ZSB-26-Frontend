@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>3</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="number" name="dollar" placeholder="USD Dollar" />
+        <div class="result">{0} USD Dollar = {0} Egyptian Pound</div>
+    </form>
+
+    <script>
+        let input = document.querySelector("input");
+        let result = document.querySelector(".result");
+
+        input.oninput = function () {
+            let dollar = Number(input.value);
+
+            if (dollar <= 0 || isNaN(dollar)) {
+                result.innerHTML = "{0} USD Dollar = {0} Egyptian Pound";
+            } else {
+                let egp = (dollar * 15.6).toFixed(2);
+                result.innerHTML = `${dollar} USD Dollar = ${egp} Egyptian Pound`;
+            }
+        };
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+I feel lost and have forgotten everything we learned in JavaScript in particular, and in the whole course in general. At least with CSS and HTML, we used to learn their content in a cohesive way, but the fragmentation that happened and the long periods of time have made me feel like I forget everything I learn quickly.
