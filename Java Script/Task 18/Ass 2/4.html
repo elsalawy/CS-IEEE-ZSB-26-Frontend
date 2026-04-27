@@ -5,10 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4</title>
+    <script>
+        let div = document.querySelector("div");
+
+        let text = div.firstChild.nextSibling.nextSibling.nextSibling.textContent.trim();
+
+        console.log(text);
+    </script>
 </head>
 
 <body>
-
+    <div>
+        <span>Hello</span>
+        <!-- We Need The Next Text Without Spaces -->
+        Elzero
+    </div>
 </body>
 
 </html>
