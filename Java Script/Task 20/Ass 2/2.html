@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Persistence</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        input,
+        select {
+            display: block;
+            margin: 10px 0;
+            padding: 8px;
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Simple Form</h2>
+
+    <form>
+        <input type="text" id="name" placeholder="Enter Name">
+        <input type="email" id="email" placeholder="Enter Email">
+        <input type="number" id="age" placeholder="Enter Age">
+
+        <select id="country">
+            <option value="egypt">Egypt</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="france">France</option>
+            <option value="germany">Germany</option>
+        </select>
+
+    </form>
+
+    <script>
+        const nameInput = document.getElementById("name");
+        const emailInput = document.getElementById("email");
+        const ageInput = document.getElementById("age");
+        const countrySelect = document.getElementById("country");
+
+        function loadData() {
+            if (sessionStorage.getItem("name")) {
+                nameInput.value = sessionStorage.getItem("name");
+            }
+
+            if (sessionStorage.getItem("email")) {
+                emailInput.value = sessionStorage.getItem("email");
+            }
+
+            if (sessionStorage.getItem("age")) {
+                ageInput.value = sessionStorage.getItem("age");
+            }
+
+            if (sessionStorage.getItem("country")) {
+                countrySelect.value = sessionStorage.getItem("country");
+            }
+        }
+
+        nameInput.addEventListener("input", () => {
+            sessionStorage.setItem("name", nameInput.value);
+        });
+
+        emailInput.addEventListener("input", () => {
+            sessionStorage.setItem("email", emailInput.value);
+        });
+
+        ageInput.addEventListener("input", () => {
+            sessionStorage.setItem("age", ageInput.value);
+        });
+
+        countrySelect.addEventListener("change", () => {
+            sessionStorage.setItem("country", countrySelect.value);
+        });
+
+        loadData();
+    </script>
+
+</body>
+
+</html>

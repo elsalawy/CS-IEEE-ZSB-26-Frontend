@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Popup Task</title>
+    </head>
+
+    <body>
+
+        <script>
+            function createPopup() {
+                let popup = document.createElement("div");
+
+                popup.style.position = "fixed";
+                popup.style.top = "50%";
+                popup.style.left = "50%";
+                popup.style.transform = "translate(-50%, -50%)";
+                popup.style.background = "#fff";
+                popup.style.padding = "20px";
+                popup.style.border = "2px solid black";
+                popup.style.textAlign = "center";
+
+                let text = document.createElement("h2");
+                text.innerText = "Welcome";
+
+                let para = document.createElement("p");
+                para.innerText = "Welcome to Elzero Web School";
+
+
+                let btn = document.createElement("button");
+                btn.innerText = "Close";
+
+                btn.onclick = function () {
+                    popup.remove();
+                };
+
+                popup.appendChild(text);
+                popup.appendChild(para);
+                popup.appendChild(btn);
+
+                document.body.appendChild(popup);
+            }
+
+            setTimeout(createPopup, 5000);
+        </script>
+
+    </body>
+
+    </html>
+</body>
+
+</html>
