@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7</title>
+</head>
+
+<body>
+    <script>
+        let numsOne = [1, 2, 3];
+        let numsTwo = [4, 5, 6];
+
+        // 1) Spread Operator
+        console.log([...numsOne, ...numsTwo]);
+
+        // 2) concat()
+        console.log(numsOne.concat(numsTwo));
+
+        // 3) push + spread
+        numsOne.push(...numsTwo);
+        console.log(numsOne);
+    </script>
+</body>
+
+</html>

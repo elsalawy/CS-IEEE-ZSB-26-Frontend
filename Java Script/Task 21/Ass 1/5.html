@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+</head>
+
+<body>
+    <script>
+        const game = {
+            title: "YS",
+            developer: "Falcom",
+            releases: {
+                "Oath In Felghana": ["USA", "Japan"],
+                "Ark Of Napishtim": {
+                    US: "20 USD",
+                    JAP: "10 USD",
+                },
+                Origin: "30 USD",
+            },
+        };
+
+        // Destructuring
+        let {
+            title: t,
+            developer: d,
+            releases: {
+                "Oath In Felghana": [u, j],
+                "Ark Of Napishtim": { US: u_price, JAP: j_price },
+                "Ark Of Napishtim": a,
+                Origin: or,
+            },
+        } = game;
+
+        let o = "Oath In Felghana";
+
+        console.log(`My Favourite Games Style Is ${t} Style`);
+        console.log(`And I Love ${d} Games`);
+        console.log(`My Best Release Is ${o} It Released in ${u} & ${j}`);
+        console.log(`Although I Love ${a ? "Ark Of Napishtim" : ""}`);
+        console.log(`${"Ark Of Napishtim"} Price in USA Is ${u_price}`);
+        console.log(`${"Ark Of Napishtim"} Price in Japan Is ${j_price}`);
+        console.log(`Origin Price Is ${or}`);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+</head>
+
+<body>
+    <script>
+        let theName = "Elzero";
+
+        // Needed Output
+        // ['E', 'l', 'z', 'e', 'r', 'o']
+
+        // 1
+        console.log([...theName]);
+
+        // 2
+        console.log(theName.split(""));
+
+        // 3
+        console.log(Array.from(theName));
+
+        // 4
+        let arr1 = [];
+        for (let i = 0; i < theName.length; i++) {
+            arr1.push(theName[i]);
+        }
+        console.log(arr1);
+
+        // 5
+        console.log([...theName].map(char => char));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6</title>
+</head>
+
+<body>
+    <script>
+        let chars = ["A", "B", "C", "D", "E", 10, 15, 6];
+
+        let numbersCount = chars.filter(e => typeof e === "number").length;
+
+        let letters = chars.filter(e => typeof e === "string");
+
+        chars = [...letters.slice(0, numbersCount), ...letters];
+
+        console.log(chars);
+    </script>
+</body>
+
+</html>
