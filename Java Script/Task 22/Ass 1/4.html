@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+</head>
+
+<body>
+    <script>
+        let re = /https?:\/\/(?:[-\w]+\.)?([-\w]+)\.\w+(?:\.\w+)?\/?.*/i;
+
+        // https? => http or https if s is exists
+        // : => :
+        // \/\/ => //
+        // (?:[-\w]+\.)? => optional subdomain (زي www. أو mail.)
+        // [-\w]+ => حروف أو أرقام أو - أو _
+        // \. => dot (.)
+        //
+        // ([-\w]+) => اسم الدومين الأساسي (capturing group)
+        // مثال: google من google.com
+        //
+        // \. => dot (.)
+        //
+        // \w+ => الامتداد الأساسي (زي com / net / org)
+        //
+        // (?:\.\w+)? => امتداد إضافي اختياري (زي .eg / .uk)
+        // مثال: google.com.eg
+        //
+        // \/? => slash اختياري في الآخر (/)
+        //
+        // .* => أي حاجة بعد كده (path / query / parameters)
+        //
+        // i => case insensitive (مش بيفرق بين capital و small)
+    </script>
+</body>
+
+</html>

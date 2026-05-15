@@ -4,18 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1</title>
+    <title>3</title>
 </head>
 
 <body>
     <script>
-        let setOfNumbers = new Set([10]);
+        let phone = "+(995)-123 (4567)";
 
-        setOfNumbers.add(20).add(setOfNumbers.size);
-
-        console.log(setOfNumbers);
-
-        console.log([...setOfNumbers].pop());
+        let phoneEx = phone.match(/\+\(\d{3}\)-\d{3}\s\(\d{4}\)/ig);
+        console.log(phoneEx);
     </script>
 </body>
 
