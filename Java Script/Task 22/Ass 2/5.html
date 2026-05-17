@@ -19,19 +19,19 @@
         // Write Your Code Here
 
         Object.defineProperty(myObj, "score", {
-            writable: false, // منع التعديل
+            writable: false,
         });
 
         Object.defineProperty(myObj, "id", {
-            enumerable: false, // يخفيه من الـ loop
+            enumerable: false,
         });
 
         Object.defineProperty(myObj, "country", {
-            enumerable: false, // يخفيه من الـ loop
+            enumerable: false,
             configurable: true,
         });
 
-        delete myObj.country; // حذفه نهائيًا من الـ object
+        delete myObj.country;
 
         myObj.score = 500;
 
