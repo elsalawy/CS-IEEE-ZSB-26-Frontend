@@ -9,6 +9,47 @@
 
 <body>
     <script>
+        // Edit The Class
+        class User {
+            #card; // Private Property
+
+            constructor(username, card) {
+                this.u = username;
+                this.#card = this.formatCard(card);
+            }
+
+            // Method to format card number
+            formatCard(card) {
+                return card.toString().replace(/\D/g, "").match(/.{1,4}/g).join("-");
+            }
+
+            // Getter
+            get showData() {
+                return `Hello ${this.u} Your Credit Card Number Is ${this.#card}`;
+            }
+
+            get c() {
+                return undefined;
+            }
+        }
+        // Do Not Edit Anything Below
+
+        let userOne = new User("Osama", "1234-5678-1234-5678");
+        let userTwo = new User("Ahmed", "1234567812345678");
+        let userThree = new User("Ghareeb", 1234567812345678);
+
+        console.log(userOne.showData);
+        // Hello Osama Your Credit Card Number Is 1234-5678-1234-5678
+
+        console.log(userTwo.showData);
+        // Hello Ahmed Your Credit Card Number Is 1234-5678-1234-5678
+
+        console.log(userThree.showData);
+        // Hello Ghareeb Your Credit Card Number Is 1234-5678-1234-5678
+
+        console.log(userOne.c); // Prevent Accessing To Card Property Here
+        // Undefined
+
 
     </script>
 </body>

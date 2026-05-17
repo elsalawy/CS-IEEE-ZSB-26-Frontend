@@ -9,30 +9,33 @@
 
 <body>
     <script>
-        let re = /https?:\/\/(?:[-\w]+\.)?([-\w]+)\.\w+(?:\.\w+)?\/?.*/i;
+        let re = /https?:\/\/ (?:[-\w]+\.)? ([-\w]+) \.\w+(?:\.\w+)?\/?.*/i;
 
         // https? => http or https if s is exists
         // : => :
         // \/\/ => //
-        // (?:[-\w]+\.)? => optional subdomain (زي www. أو mail.)
-        // [-\w]+ => حروف أو أرقام أو - أو _
+
+        // (?:[-\w]+\.)? => optional subdomain (www. or mail.)
+
+        // [-\w]+ =>  letters or digits ot dashs
+
         // \. => dot (.)
         //
-        // ([-\w]+) => اسم الدومين الأساسي (capturing group)
+        // ([-\w]+) => domain name (capturing group)
         // مثال: google من google.com
         //
         // \. => dot (.)
         //
-        // \w+ => الامتداد الأساسي (زي com / net / org)
+        // \w+ => (com / net / org)
         //
-        // (?:\.\w+)? => امتداد إضافي اختياري (زي .eg / .uk)
+        // (?:\.\w+)? =>  ( .eg / .uk)
         // مثال: google.com.eg
         //
-        // \/? => slash اختياري في الآخر (/)
+        // \/? => slash (/)
         //
-        // .* => أي حاجة بعد كده (path / query / parameters)
+        // .* => (path / query / parameters)
         //
-        // i => case insensitive (مش بيفرق بين capital و small)
+        // i => case insensitive (capital or small)
     </script>
 </body>
 

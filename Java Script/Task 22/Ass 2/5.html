@@ -9,7 +9,37 @@
 
 <body>
     <script>
+        const myObj = {
+            username: "Elzero",
+            id: 100,
+            score: 1000,
+            country: "Egypt",
+        };
 
+        // Write Your Code Here
+
+        Object.defineProperty(myObj, "score", {
+            writable: false, // منع التعديل
+        });
+
+        Object.defineProperty(myObj, "id", {
+            enumerable: false, // يخفيه من الـ loop
+        });
+
+        Object.defineProperty(myObj, "country", {
+            enumerable: false, // يخفيه من الـ loop
+            configurable: true,
+        });
+
+        delete myObj.country; // حذفه نهائيًا من الـ object
+
+        myObj.score = 500;
+
+        for (let prop in myObj) {
+            console.log(`${prop} => ${myObj[prop]}`);
+        }
+
+        console.log(myObj);
     </script>
 </body>
 

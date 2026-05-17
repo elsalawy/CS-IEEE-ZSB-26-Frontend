@@ -9,7 +9,27 @@
 
 <body>
     <script>
+        class Car {
+            constructor(name, model, price) {
+                this.n = name;
+                this.m = model;
+                this.p = price;
+            }
 
+            run() {
+                return `Car ${this.n} Is Running Now`;
+            }
+            stop() {
+                return `Car ${this.n} Is stopped`;
+            }
+        }
+
+        let carOne = new Car("mercedes", 2022, 3000000);
+        let carTwo = new Car("toyota", 2020, 150000);
+        let carThree = new Car("kia", 2026, 200000);
+
+        console.log(`Car one is ${carOne.n} and model is ${carOne.m} and price is ${carOne.p}`);
+        console.log(carOne.run());
     </script>
 </body>
 
